@@ -116,6 +116,7 @@ else:
 
 _grammar_content = None  # content in file
 _default_key = 'default'
+## GRAMMAR_DIR es la_grammar, sólo está raro para que funcione sin importar dónde se esté corriendo
 _parser_manager = ParserManager(GRAMMAR_DIR)
 
 
@@ -148,6 +149,8 @@ def create_parser():
         # grammar = file.read()
         grammar = LA
         # simplified_grammar = simplified_file.read()
+        ## The difference between LA and SIMPLIFIED seems to be that func_id is !!! in LA ad identifier_alone in SIMPLIFIED
+        ## Also, SIMPLIFIED has a longer identifier_alone definition
         simplified_grammar = SIMPLIFIED
         global _grammar_content
         _grammar_content = grammar
