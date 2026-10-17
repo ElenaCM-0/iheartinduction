@@ -6,7 +6,7 @@ import inspect
 import logging
 import argparse
 
-
+##?# I do not know what this function is for, no one seems to call it. Delete and see what breaks?
 def IHLA(content, ret=None, mapping={}):
     """
     interface for Python embeddability
@@ -18,6 +18,7 @@ def IHLA(content, ret=None, mapping={}):
     code_dict, var_data = compile_la_content(content, parser_type=ParserTypeEnum.NUMPY, struct=True, get_vars=True)
     code_frame = code_dict[ParserTypeEnum.NUMPY]
     loc = {}
+    ## Check all of the parameters have been provided
     for param in var_data.params:
         cur_param = param
         if param in mapping:
@@ -37,12 +38,14 @@ def IHLA(content, ret=None, mapping={}):
         return loc['instance']
 
 if __name__ == '__main__':
+    ## Parse input arguments to process file
     LaLogger.getInstance().set_level(logging.DEBUG if DEBUG_MODE else logging.ERROR)
     arg_parser = argparse.ArgumentParser(description='I Heart LA')
     arg_parser.add_argument('-o', '--output', help='The output language', choices = ['numpy', 'eigen', 'latex','matlab'])
     # arg_parser.add_argument('-i', '--input', help='File name containing I heart LA source code')
     arg_parser.add_argument('--GUI', action='store_true', help='Launch the GUI editor')
     arg_parser.add_argument('--regenerate-grammar', action='store_true', help='Regenerate grammar files')
+    ## If input is - it reads and outputs to command line
     arg_parser.add_argument('input', nargs='*', help='The I Heart LA files to compile.')
     args = arg_parser.parse_args()
     if args.regenerate_grammar:
