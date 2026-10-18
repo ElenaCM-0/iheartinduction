@@ -8,7 +8,7 @@ class LaMsgTypeEnum(Enum):
     PARSE_ERROR = 1
     TYPE_ERROR = 2
 
-## Helper class for displaying info, I think
+##!# Helper class for displaying info, I think
 class LaMsg(object):
     __instance = None
     @staticmethod
@@ -204,7 +204,7 @@ def get_parse_info_buffer(parse_info):
         return parse_info.tokenizer
     return parse_info.buffer
 
-## Sets the name, although it does not seem like this is used anywhere
+##!# Sets the name, although it does not seem like this is used anywhere
 ##?# Delete and see if anything breaks?
 def set_source_name(name):
     LaMsg.getInstance().cur_name = name

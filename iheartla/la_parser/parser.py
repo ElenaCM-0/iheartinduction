@@ -116,12 +116,14 @@ else:
 
 _grammar_content = None  # content in file
 _default_key = 'default'
-## GRAMMAR_DIR es la_grammar, sólo está raro para que funcione sin importar dónde se esté corriendo
+##!# GRAMMAR_DIR es la_grammar, sólo está raro para que funcione sin importar dónde se esté corriendo
 _parser_manager = ParserManager(GRAMMAR_DIR)
 
 
 def get_compiled_parser(grammar, keys='init', extra_dict={}):
     log_la("keys:" + keys)
+    ##!# Suele retornar un init parser y no un default parser
+    ##!# grammar y extra_dict parecen no sirven de nada a no ser que DEBUG_PARSER
     return _parser_manager.get_parser(keys, grammar, extra_dict)
 
 
@@ -149,8 +151,8 @@ def create_parser():
         # grammar = file.read()
         grammar = LA
         # simplified_grammar = simplified_file.read()
-        ## The difference between LA and SIMPLIFIED seems to be that func_id is !!! in LA ad identifier_alone in SIMPLIFIED
-        ## Also, SIMPLIFIED has a longer identifier_alone definition
+        ##!# The difference between LA and SIMPLIFIED seems to be that func_id is !!! in LA ad identifier_alone in SIMPLIFIED
+        ##!# Also, SIMPLIFIED has a longer identifier_alone definition
         simplified_grammar = SIMPLIFIED
         global _grammar_content
         _grammar_content = grammar
@@ -159,6 +161,9 @@ def create_parser():
         # file.close()
         # simplified_file.close()
         # get default parser
+        ##?# Why is this called? The result is never used!
+        ##!# _grammar_content at this point is LA
+        ##!# _default_key is 'default'
         get_compiled_parser(_grammar_content, _default_key)
     except IOError:
         print("IO Error!")
@@ -443,7 +448,7 @@ def parse_and_translate(content, frame, parser_type=None, func_name=None):
 def get_file_name(path_name):
     return Path(path_name).stem
 
-## VERY IMPORTANT FUNCTION
+##!# VERY IMPORTANT FUNCTION
 def compile_la_content(la_content,
                        parser_type=ParserTypeEnum.NUMPY | ParserTypeEnum.EIGEN | ParserTypeEnum.LATEX | ParserTypeEnum.MATHJAX | ParserTypeEnum.MATLAB | ParserTypeEnum.MACROMATHJAX,
                        func_name=None,
@@ -452,7 +457,7 @@ def compile_la_content(la_content,
                        get_json=False,
                        get_vars=False,
                        class_only=False):
-    ## I think this function does not change anything at all
+    ##!# I think this function does not change anything at all
     set_source_name(func_name)
     if path:
         global _module_path
@@ -513,7 +518,7 @@ def compile_la_content(la_content,
             return ret, var_data
         return ret
 
-## VERY IMPORTANT FUNCTION
+##!# VERY IMPORTANT FUNCTION
 def compile_la_file(la_file, parser_type=ParserTypeEnum.NUMPY | ParserTypeEnum.EIGEN | ParserTypeEnum.LATEX,
                        class_only=False):
     """
@@ -521,12 +526,12 @@ def compile_la_file(la_file, parser_type=ParserTypeEnum.NUMPY | ParserTypeEnum.E
     """
     # Alec: maybe this compile_la_file should just call compile_la_content after
     # reading the content?
-    ## Read file from command line
+    ##!# Read file from command line
     if la_file == "-":
         content = "\n".join(sys.stdin.readlines())
         base_name = "iheartla"
     else:
-        ## Just reads the file, nothing special
+        ##!# Just reads the file, nothing special
         content = read_from_file(la_file)
         base_name = get_file_name(la_file)
         global _module_path

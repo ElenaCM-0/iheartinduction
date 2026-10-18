@@ -66,6 +66,7 @@ class grammarinitParser(Parser):
     ):
         if keywords is None:
             keywords = KEYWORDS
+        
         super(grammarinitParser, self).__init__(
             whitespace=whitespace,
             nameguard=nameguard,
@@ -5937,13 +5938,13 @@ class ModelBase(Node):
 
 class grammarinitModelBuilderSemantics(ModelBuilderSemantics):
     def __init__(self, context=None, types=None):
-        ## globals() returns all existing classes + global variables
-        ## type(t) is type is true iff t is a class (i.e., it only accepts classes) (some classes of a weird might be excluded)
-        ## issubclass(t, ModelBase) so it only keeps the sublcasses of ModelBase, which I think is created specifically for the purpose of filtering which classes are kept
+        ##!# globals() returns all existing classes + global variables
+        ##!# type(t) is type is true iff t is a class (i.e., it only accepts classes) (some classes of a weird might be excluded)
+        ##!# issubclass(t, ModelBase) so it only keeps the sublcasses of ModelBase, which I think is created specifically for the purpose of filtering which classes are kept
         types = [
             t for t in globals().values()
             if type(t) is type and issubclass(t, ModelBase)
-        ] + (types or []) ## Appends to the existing types variable
+        ] + (types or []) ##!# Appends to the existing types variable
         super(grammarinitModelBuilderSemantics, self).__init__(context=context, types=types)
 
 

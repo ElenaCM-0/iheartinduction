@@ -26,13 +26,17 @@ class ParserManager(object):
             self.grammar_dir = self.parser_file_manager.grammar_dir
             self.save_threads = self.parser_file_manager.save_threads
         else:
+            ##!# semantics es un argumento de la clase de tatsu Parser
             self.init_parser = grammarinitParser(semantics=grammarinitModelBuilderSemantics())
             self.default_parser = grammardefaultParser(semantics=grammardefaultModelBuilderSemantics())
+            ##!# init de grammardefaultModelBuilderSemantics parece idéntico al de grammarinit...
+            ##?# Ver si existe alguna diferencia (habría que mirar si las clases declaradas en los archivos son distintas o no)
 
     def get_parser(self, key, grammar, extra_dict={}):
         if DEBUG_PARSER:
             return self.parser_file_manager.get_parser(key, grammar, extra_dict)
         else:
+            ##!# When this is called in compile_la_parser key = init, as it is the default parser
             if key == 'init':
                 return self.init_parser
             self.modify_default_parser(extra_dict)
