@@ -21,6 +21,7 @@ class IRNodeType(Enum):
     If = 53
     Function = 54
     LocalFunc = 55
+    ##!HERE## Add a new type for induction
     # if condition
     Condition = 99
     In = 100
@@ -258,6 +259,9 @@ class FunctionTypeNode(ExprNode):
         self.separators = []
         self.ret = None
 
+##!HERE## Comprobar que heredo de quien toca
+class InductionNode(ExprNode):
+    pass
 
 class ImportNode(StmtNode):
     def __init__(self, package=None, module=None, names=None, separators=None, params=None, parse_info=None, raw_text=None):

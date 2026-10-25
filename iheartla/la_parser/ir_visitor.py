@@ -370,6 +370,7 @@ class IRVisitor(object):
             IRNodeType.SetType: "visit_set_type",
             IRNodeType.ScalarType: "visit_scalar_type",
             IRNodeType.FunctionType: "visit_function_type",
+            IRNodeType.InductionType: "visit_induction",
             # derivatives
             IRNodeType.Import: "visit_import",
         }
@@ -497,6 +498,10 @@ class IRVisitor(object):
                 pre_list += param_info.pre_list
         content = "{}({})".format(name_info.content, ', '.join(params))
         return CodeNodeInfo(content, pre_list)
+
+    ##!HERE##
+    def visit_induction(self, node, **kwargs):
+        pass
 
     def visit_local_func(self, node, **kwargs):
         pass

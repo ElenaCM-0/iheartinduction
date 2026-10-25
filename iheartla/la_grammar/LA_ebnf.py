@@ -15,7 +15,7 @@ start::Start
     = {{separator_with_space} {hspace} vblock+:valid_block {separator_with_space}}+ {blank} $
     ;
 """
-LA = START + KEY WORDS + NUMBER + OPERATORS + MATRIX + BASE + TRIGONOMETRY + SHARED + ARITHMETIC
+LA = START + KEYWORDS + NUMBER + OPERATORS + MATRIX + BASE + TRIGONOMETRY + SHARED + ARITHMETIC
 #include :: "keywords.ebnf"
 #include :: "number.ebnf"
 #include :: "operators.ebnf"

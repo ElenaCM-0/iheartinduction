@@ -2092,6 +2092,10 @@ class TypeWalker(NodeWalker):
             assert False, "Not a function"
             # assert len(node.params) == 1, "Not a function"  # never reach
             # return self.make_mul_info(name_info, self.walk(node.params[0], **kwargs))
+    
+    ##!HERE## 
+    def walk_Induction(self, node, **kwargs):
+        pass
 
     def walk_IfCondition(self, node, **kwargs):
         condition_node = ConditionNode(cond_type=ConditionType.ConditionOr, raw_text=node.text, parse_info=node.parseinfo)

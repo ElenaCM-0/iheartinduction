@@ -1,3 +1,4 @@
+##!HERE## Add keyword
 KEYWORDS = r"""
 BUILTIN_KEYWORDS
     =
