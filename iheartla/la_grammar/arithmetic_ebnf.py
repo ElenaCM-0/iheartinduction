@@ -32,6 +32,7 @@ arithmetic_multiplication::ArithMultiply
 arithmetic_division::ArithDivide
     =
     left:arithmetic_term {hspace} op:('/'|'÷') {hspace} right:arithmetic_factor
+    | 'frac{' left:arithmetic_term '}{' left:arithmetic_term '}'
     ;
     
 arithmetic_factor::ArithFactor

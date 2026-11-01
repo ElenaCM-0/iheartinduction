@@ -3201,7 +3201,7 @@ class TypeWalker(NodeWalker):
         ret_type = ScalarType(is_int=True)
         ret_info = NodeInfo(ret_type, symbols=left_info.symbols.union(right_info.symbols))
         op_type = DivOpType.DivOpSlash
-        if node.op == '÷':
+        if node.op and node.op == '÷':
             op_type = DivOpType.DivOpUnicode
         ir_node = DivNode(left_info.ir, right_info.ir, parse_info=node.parseinfo, op=op_type)
         ir_node.la_type = ret_type
