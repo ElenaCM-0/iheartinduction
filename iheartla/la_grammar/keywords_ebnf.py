@@ -28,6 +28,7 @@ BUILTIN_KEYWORDS
     | INITIAL
     | AND
     | OR
+    | PROOF
     ;
 
 TRACE = /trace/;
@@ -86,4 +87,5 @@ WITH = /with/;
 INITIAL = /initial/;
 AND = /and/;
 OR = /or/;
+PROOF = /Proof/;
 """

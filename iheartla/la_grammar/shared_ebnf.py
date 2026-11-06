@@ -97,7 +97,7 @@ digit
 #######################################################################################################################
 
 valid_block
-    = Directive | params_block | statements 
+    = Directive | proof_begin | params_block | statements 
     ;
 
 

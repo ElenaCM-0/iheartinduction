@@ -1,0 +1,427 @@
+↙start ~1:1
+Proof: Induction(n)
+↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+↙hspace↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+≢' ' 
+Proof: Induction(n)
+≢'	' 
+Proof: Induction(n)
+≢hspace↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+↙hspace↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+≢hspace↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+↙separator↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+↙line↙separator↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+≢'
+' 
+Proof: Induction(n)
+≢'' 
+Proof: Induction(n)
+≢'' 
+Proof: Induction(n)
+≢line↙separator↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+≢';' 
+Proof: Induction(n)
+≢separator↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+≢separator_with_space↙start ~1:1
+Proof: Induction(n)
+↙separator_with_space↙start ~1:1
+Proof: Induction(n)
+≢separator_with_space↙start ~1:1
+Proof: Induction(n)
+↙hspace↙start ~1:1
+Proof: Induction(n)
+≢hspace↙start ~1:1
+Proof: Induction(n)
+↙hspace↙start ~1:1
+Proof: Induction(n)
+≢hspace↙start ~1:1
+Proof: Induction(n)
+↙valid_block↙start ~1:1
+Proof: Induction(n)
+↙Directive↙valid_block↙start ~1:1
+Proof: Induction(n)
+↙import↙Directive↙valid_block↙start ~1:1
+Proof: Induction(n)
+↙multi_str↙import↙Directive↙valid_block↙start ~1:1
+Proof: Induction(n)
+≡'Proof' /[A-Za-z\p{Ll}\p{Lu}\p{Lo}]\p{M}*([A-Z0-9a-z\p{Ll}\p{Lu}\p{Lo}]\p{M}*)*/
+: Induction(n)
+≡multi_str↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+↙hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢' ' 
+: Induction(n)
+≢'	' 
+: Induction(n)
+≢hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+↙hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢',' 
+: Induction(n)
+↙hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+↙hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢',' 
+: Induction(n)
+↙hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+↙hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢hspace↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+↙FROM↙import↙Directive↙valid_block↙start ~1:6
+: Induction(n)
+≢'' /from/
+: Induction(n)
+≢import↙Directive↙valid_block↙start ~1:1
+Proof: Induction(n)
+≢Directive↙valid_block↙start ~1:1
+Proof: Induction(n)
+↙proof_begin↙valid_block↙start ~1:1
+Proof: Induction(n)
+↙PROOF↙proof_begin↙valid_block↙start ~1:1
+Proof: Induction(n)
+≡'Proof' /Proof/
+: Induction(n)
+≡PROOF↙proof_begin↙valid_block↙start ~1:6
+: Induction(n)
+≡':' 
+ Induction(n)
+↙hspace↙proof_begin↙valid_block↙start ~1:7
+ Induction(n)
+≡' ' 
+Induction(n)
+≡hspace↙proof_begin↙valid_block↙start ~1:8
+Induction(n)
+↙hspace↙proof_begin↙valid_block↙start ~1:8
+Induction(n)
+≢' ' 
+Induction(n)
+≢'	' 
+Induction(n)
+≢hspace↙proof_begin↙valid_block↙start ~1:8
+Induction(n)
+↙induction_declaration↙proof_begin↙valid_block↙start ~1:8
+Induction(n)
+≡'Induction(n)' 
+↙line↙induction_declaration↙proof_begin↙valid_block↙start ~1:20
+≡'
+' 
+	IH:
+≡line↙induction_declaration↙proof_begin↙valid_block↙start ~2:1
+	IH:
+↙line↙induction_declaration↙proof_begin↙valid_block↙start ~2:1
+	IH:
+≢'
+' 
+	IH:
+≢'' 
+	IH:
+≢'' 
+	IH:
+≢line↙induction_declaration↙proof_begin↙valid_block↙start ~2:1
+	IH:
+≡'	' 
+IH:
+≡'IH:' 
+↙line↙induction_declaration↙proof_begin↙valid_block↙start ~2:5
+≡'
+' 
+		sum_(i for i <= $n) i = $n($n+1)/2
+≡line↙induction_declaration↙proof_begin↙valid_block↙start ~3:1
+		sum_(i for i <= $n) i = $n($n+1)/2
+↙line↙induction_declaration↙proof_begin↙valid_block↙start ~3:1
+		sum_(i for i <= $n) i = $n($n+1)/2
+≢'
+' 
+		sum_(i for i <= $n) i = $n($n+1)/2
+≢'' 
+		sum_(i for i <= $n) i = $n($n+1)/2
+≢'' 
+		sum_(i for i <= $n) i = $n($n+1)/2
+≢line↙induction_declaration↙proof_begin↙valid_block↙start ~3:1
+		sum_(i for i <= $n) i = $n($n+1)/2
+≡'		' 
+sum_(i for i <= $n) i = $n($n+1)/2
+↙ih↙induction_declaration↙proof_begin↙valid_block↙start ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_expression↙ih↙induction_declaration↙proof_begin↙valid_block↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_addition↙arithmetic_expression↙ih↙induction_declaration↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_expression↙arithmetic_addition↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_expression↙arithmetic_addition↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_addition↙arithmetic_expression↙ih↙induction_declaration↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_subtraction↙arithmetic_expression↙ih↙induction_declaration↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_expression↙arithmetic_subtraction↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_expression↙arithmetic_subtraction↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_subtraction↙arithmetic_expression↙ih↙induction_declaration↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'-' 
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_term↙arithmetic_expression↙ih↙induction_declaration↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_multiplication↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_term↙arithmetic_multiplication↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_term↙arithmetic_multiplication↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_term↙arithmetic_multiplication↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_term↙arithmetic_multiplication↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢arithmetic_multiplication↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_division↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_term↙arithmetic_division↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_term↙arithmetic_division↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'frac{' 
+sum_(i for i <= $n) i = $n($n+1)/2
+≢arithmetic_division↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙arithmetic_subexpression↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'(' 
+sum_(i for i <= $n) i = $n($n+1)/2
+≢arithmetic_subexpression↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙identifier↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙identifier_with_subscript↙identifier↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙identifier_alone↙identifier_with_subscript↙identifier↙arithmetic_factor↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙KEYWORDS↙identifier_alone↙identifier_with_subscript↙identifier↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙BUILTIN_KEYWORDS↙KEYWORDS↙identifier_alone↙identifier_with_subscript↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙DERIVATIVE↙BUILTIN_KEYWORDS↙KEYWORDS↙identifier_alone↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'' /∂/
+sum_(i for i <= $n) i = $n($n+1)/2
+↙WHERE↙BUILTIN_KEYWORDS↙KEYWORDS↙identifier_alone↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'' /where/
+sum_(i for i <= $n) i = $n($n+1)/2
+↙GIVEN↙BUILTIN_KEYWORDS↙KEYWORDS↙identifier_alone↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'' /given/
+sum_(i for i <= $n) i = $n($n+1)/2
+↙SUM↙BUILTIN_KEYWORDS↙KEYWORDS↙identifier_alone↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≡'sum' /sum/
+_(i for i <= $n) i = $n($n+1)/2
+≡SUM↙BUILTIN_KEYWORDS↙KEYWORDS↙identifier_alone↙ ~3:6
+_(i for i <= $n) i = $n($n+1)/2
+≡BUILTIN_KEYWORDS↙KEYWORDS↙identifier_alone↙identifier_with_subscript↙ ~3:6
+_(i for i <= $n) i = $n($n+1)/2
+≡KEYWORDS↙identifier_alone↙identifier_with_subscript↙identifier↙ ~3:6
+_(i for i <= $n) i = $n($n+1)/2
+≢identifier_alone↙identifier_with_subscript↙identifier↙arithmetic_factor↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙identifier_alone↙identifier_with_subscript↙identifier↙arithmetic_factor↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢identifier_alone↙identifier_with_subscript↙identifier↙arithmetic_factor↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢identifier_with_subscript↙identifier↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙identifier_alone↙identifier↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢identifier_alone↙identifier↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢identifier↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙number↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙double↙number↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙integer↙double↙number↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙digit↙integer↙double↙number↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'' /\d/
+sum_(i for i <= $n) i = $n($n+1)/2
+≢integer↙double↙number↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙floating_point↙double↙number↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙mantissa↙floating_point↙double↙number↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙digit↙mantissa↙floating_point↙double↙number↙arithmetic_factor↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙digit↙mantissa↙floating_point↙double↙number↙arithmetic_factor↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'.' 
+sum_(i for i <= $n) i = $n($n+1)/2
+↙digit↙mantissa↙floating_point↙double↙number↙arithmetic_factor↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢mantissa↙floating_point↙double↙number↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢floating_point↙double↙number↙arithmetic_factor↙arithmetic_term↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢double↙number↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+↙fraction↙number↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢'' /[\u00BC-\u00BE\u2150-\u215E]/
+sum_(i for i <= $n) i = $n($n+1)/2
+↙integer↙number↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢integer↙number↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢number↙arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+≢arithmetic_factor↙arithmetic_term↙arithmetic_expression↙ih↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_term↙arithmetic_expression↙ih↙induction_declaration↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ arithmetic_expression↙ih↙induction_declaration↙proof_begin↙valid_block↙ ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ ih↙induction_declaration↙proof_begin↙valid_block↙start ~3:3
+sum_(i for i <= $n) i = $n($n+1)/2
+⟲ induction_declaration↙proof_begin↙valid_block↙start ~1:8
+Induction(n)
+⟲ proof_begin↙valid_block↙start ~1:1
+Proof: Induction(n)
+≢valid_block↙start ~1:1
+Proof: Induction(n)
+≢start ~1:1
+Proof: Induction(n)
+FF
+======================================================================
+FAIL: testGrammar (test.test_grammar.GrammarTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/usuario/miniconda3/envs/iheartla-cli/lib/python3.8/site-packages/tatsu/contexts.py", line 218, in parse
+    result = rule()
+tatsu.exceptions.FailedCut: (3:3) infinite left recursion :
+                sum_(i for i <= $n) i = $n($n+1)/2
+                ^
+arithmetic_expression
+ih
+induction_declaration
+proof_begin
+valid_block
+start
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/usuario/Documentos/Uni/6/TFG_Info/iheartinduction/test/test_grammar.py", line 17, in testGrammar
+    ast = model.parse('''Proof: Induction(n)
+tatsu.exceptions.FailedLeftRecursion: (3:3) infinite left recursion :
+                sum_(i for i <= $n) i = $n($n+1)/2
+                ^
+arithmetic_expression
+ih
+induction_declaration
+proof_begin
+valid_block
+start
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/usuario/Documentos/Uni/6/TFG_Info/iheartinduction/test/test_grammar.py", line 28, in testGrammar
+    self.fail("Unexpected exception %s" % e)
+AssertionError: Unexpected exception (3:3) infinite left recursion :
+                sum_(i for i <= $n) i = $n($n+1)/2
+                ^
+arithmetic_expression
+ih
+induction_declaration
+proof_begin
+valid_block
+start
+
+======================================================================
+FAIL: testGrammarParsesInput (test.test_grammar.GrammarTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/usuario/miniconda3/envs/iheartla-cli/lib/python3.8/site-packages/tatsu/contexts.py", line 694, in _option
+    yield
+tatsu.exceptions.FailedToken: (3:1) expecting '\t' :
+    IH:
+^
+induction_declaration
+proof_begin
+valid_block
+start
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/usuario/miniconda3/envs/iheartla-cli/lib/python3.8/site-packages/tatsu/contexts.py", line 218, in parse
+    result = rule()
+tatsu.exceptions.FailedCut: (3:1) expecting '\t' :
+    IH:
+^
+induction_declaration
+proof_begin
+valid_block
+start
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/usuario/Documentos/Uni/6/TFG_Info/iheartinduction/test/test_grammar.py", line 34, in testGrammarParsesInput
+    tatsu.parse(LA, '''
+tatsu.exceptions.FailedParse: (3:1) no available options :
+    IH:
+^
+line
+induction_declaration
+proof_begin
+valid_block
+start
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/usuario/Documentos/Uni/6/TFG_Info/iheartinduction/test/test_grammar.py", line 46, in testGrammarParsesInput
+    self.fail("Unexpected exception %s" % e)
+AssertionError: Unexpected exception (3:1) no available options :
+    IH:
+^
+line
+induction_declaration
+proof_begin
+valid_block
+start
+
+----------------------------------------------------------------------
+Ran 2 tests in 9.849s
+
+FAILED (failures=2)
