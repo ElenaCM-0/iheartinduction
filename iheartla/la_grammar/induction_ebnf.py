@@ -9,22 +9,32 @@ proof_begin
 #     '\tStatement:' {hspace} te
 induction_declaration::Induction
     =
-    'Induction(n)' {line}+ '\t'
-    'IH:' {line}+ '\t\t' ih:ih {line}+ '\t'
-    'Base:' {hspace} 'n=' basen:integer {line}+ '\t\t' ih:ih {line}+ '\t'
-    'IS:' {hspace} 'n=>n+' step_size:integer {line}+ '\t\t' 
-    proof:equality
+    'Induction(n)' {separator_with_space}+
+    'IH:' {separator_with_space}+ ih:ih {separator_with_space}+ 
+    'Base:' {hspace} 'n=' basen:integer {separator_with_space}+ basep:chain_equality {separator_with_space}+
+    'IS:' {hspace} 'n=>n+' step_size:integer {separator_with_space}+
+    proof:chain_equality
     ;
 
 ih::InductionHypothesis
     =
-    lhs:arithmetic_expression {hspace} '=' {hspace} rhs:arithmetic_expression
+    equality
+    ;
+
+chain_equality::ChainEquality
+    =
+    | lhs:chain_equality {hspace} '=' {hspace} rhs:expression
+    | equality
     ;
 
 equality::Equality
     =
-    lhs:arithmetic_expression {hspace} '=' {hspace} rhs:arithmetic_expression
-    | lhs:arithmetic_expression {hspace} '=' {hspace} rhs:equality
+    lhs:expression {hspace} '=' {hspace} rhs:expression
+    ;
+
+induction_identifier::InductionN
+    =
+    '$'induction_variable:identifier_alone
     ;
 
 # text_with_n::TextN

@@ -27,8 +27,10 @@ LA = START + KEYWORDS + NUMBER + OPERATORS + MATRIX + BASE + TRIGONOMETRY + SHAR
 LA += r"""
 func_id='!!!';
 
+#!## Definition of IDENTIFIER
+# Meaning: match one Unicode letter, optionally followed by zero or more Unicode combining marks.
 identifier_alone::IdentifierAlone
-    = !KEYWORDS( value:/[A-Za-z\p{Ll}\p{Lu}\p{Lo}]\p{M}*/ | '`' id:/[^`]*/ '`')
+    = !KEYWORDS( value:/[A-Za-z\p{Ll}\p{Lu}\p{Lo}]\p{M}*/ | '`' id:/[^`]*/ '`' | value:induction_identifier)
     #= const:('abc'|'sss') | (!(KEYWORDS |'abc'|'sss' ) value:/[A-Za-z\p{Ll}|\p{Lu}|\p{Lo}]/ | '`' id:/[^`]*/ '`')
     ;
 """

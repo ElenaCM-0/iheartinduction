@@ -47,6 +47,7 @@ multiplication::Multiply
 division::Divide
     =
     left:term {hspace} op:('/'|'÷') {hspace} right:factor
+    | 'frac{' left:term '}{' right:factor '}'
     ;
 
 

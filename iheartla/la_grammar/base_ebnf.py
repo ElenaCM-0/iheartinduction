@@ -12,6 +12,7 @@ lines
     = {line}+
     ;
 
+#!## Definition of identifier
 identifier
     = identifier_with_subscript
     | identifier_alone
