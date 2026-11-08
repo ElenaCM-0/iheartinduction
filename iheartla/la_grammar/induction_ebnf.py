@@ -32,11 +32,19 @@ equality::Equality
     lhs:expression {hspace} '=' {hspace} rhs:expression
     ;
 
-induction_identifier::InductionN
+induction_identifier
     =
-    '$'induction_variable:identifier_alone
+     $ (induction_word_identifier | induction_variable_identifier)
     ;
 
+induction_variable_identifier::InductionN
+    =
+     induction_variable:identifier_alone
+    ;
+
+induction_word_identifier
+    = 'IH-' op:identifier_alone
+    ;
 # text_with_n::TextN
 #     =
 #     '$n' textAfter:/[a-zA-Z ]/
