@@ -34,7 +34,7 @@ equality::Equality
 
 induction_identifier
     =
-     $ (induction_word_identifier | induction_variable_identifier)
+     '$' (induction_word_identifier | induction_variable_identifier)
     ;
 
 induction_variable_identifier::InductionN

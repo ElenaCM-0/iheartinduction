@@ -25,7 +25,7 @@ class GrammarTest(unittest.TestCase):
 
 \tIS: n=>n+1
 \t\tsum_(i for i <= $s) i = $IHh + $s = $IHc + $s = $n($n+1)/2 + $s⋅2/2 = $s($n + 2)/2 = frac{($s)⋅($n + 1 + 1)}{2}
-        ''') # , trace=True) Activate for debug
+        ''' )# , trace=True) # Activate for debug
 
             print(json.dumps(asjson(ast), indent=2))
 

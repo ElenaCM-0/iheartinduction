@@ -1,0 +1,604 @@
+{
+  "vblock": [
+    [
+      "Proof",
+      ":",
+      [
+        " "
+      ],
+      {
+        "ih": {
+          "lhs": {
+            "sign": null,
+            "value": {
+              "op": {
+                "id": {
+                  "value": "i"
+                },
+                "cond": {
+                  "single": {
+                    "atom": {
+                      "cond": {
+                        "left": {
+                          "sign": null,
+                          "value": {
+                            "id0": {
+                              "value": "i"
+                            }
+                          }
+                        },
+                        "op": "<=",
+                        "right": {
+                          "sign": null,
+                          "value": {
+                            "id0": {
+                              "value": [
+                                "$",
+                                {
+                                  "induction_variable": {
+                                    "value": "n"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "exp": {
+                  "id0": {
+                    "value": "i"
+                  }
+                }
+              }
+            }
+          },
+          "rhs": {
+            "sign": null,
+            "value": {
+              "left": {
+                "left": {
+                  "id0": {
+                    "value": [
+                      "$",
+                      {
+                        "induction_variable": {
+                          "value": "n"
+                        }
+                      }
+                    ]
+                  }
+                },
+                "right": {
+                  "sub": {
+                    "value": {
+                      "value": {
+                        "left": {
+                          "sign": null,
+                          "value": {
+                            "id0": {
+                              "value": [
+                                "$",
+                                {
+                                  "induction_variable": {
+                                    "value": "n"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        "op": "+",
+                        "right": {
+                          "num": {
+                            "value": [
+                              "1"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "op": "/",
+              "right": {
+                "num": {
+                  "value": [
+                    "2"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "basen": {
+          "value": [
+            "1"
+          ]
+        },
+        "basep": {
+          "lhs": {
+            "lhs": {
+              "sign": null,
+              "value": {
+                "op": {
+                  "id": {
+                    "value": "i"
+                  },
+                  "cond": {
+                    "single": {
+                      "atom": {
+                        "cond": {
+                          "left": {
+                            "sign": null,
+                            "value": {
+                              "id0": {
+                                "value": "i"
+                              }
+                            }
+                          },
+                          "op": "<=",
+                          "right": {
+                            "sign": null,
+                            "value": {
+                              "num": {
+                                "value": [
+                                  "1"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "exp": {
+                    "num": {
+                      "value": [
+                        "1"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "rhs": {
+              "sign": null,
+              "value": {
+                "num": {
+                  "value": [
+                    "1"
+                  ]
+                }
+              }
+            }
+          },
+          "rhs": {
+            "sign": null,
+            "value": {
+              "left": {
+                "left": {
+                  "num": {
+                    "value": [
+                      "1"
+                    ]
+                  }
+                },
+                "op": "\u22c5",
+                "right": {
+                  "sub": {
+                    "value": {
+                      "sign": null,
+                      "value": {
+                        "num": {
+                          "value": [
+                            "2"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "op": "/",
+              "right": {
+                "num": {
+                  "value": [
+                    "2"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "step_size": {
+          "value": [
+            "1"
+          ]
+        },
+        "proof": {
+          "lhs": {
+            "lhs": {
+              "lhs": {
+                "lhs": {
+                  "lhs": {
+                    "sign": null,
+                    "value": {
+                      "op": {
+                        "id": {
+                          "value": "i"
+                        },
+                        "cond": {
+                          "single": {
+                            "atom": {
+                              "cond": {
+                                "left": {
+                                  "sign": null,
+                                  "value": {
+                                    "id0": {
+                                      "value": "i"
+                                    }
+                                  }
+                                },
+                                "op": "<=",
+                                "right": {
+                                  "sign": null,
+                                  "value": {
+                                    "id0": {
+                                      "value": [
+                                        "$",
+                                        {
+                                          "induction_variable": {
+                                            "value": "s"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "exp": {
+                          "id0": {
+                            "value": "i"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "rhs": {
+                    "value": {
+                      "left": {
+                        "sign": null,
+                        "value": {
+                          "left": {
+                            "left": {
+                              "id0": {
+                                "value": [
+                                  "$",
+                                  {
+                                    "induction_variable": {
+                                      "value": "I"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "right": {
+                              "id0": {
+                                "value": "H"
+                              }
+                            }
+                          },
+                          "right": {
+                            "id0": {
+                              "value": "h"
+                            }
+                          }
+                        }
+                      },
+                      "op": "+",
+                      "right": {
+                        "id0": {
+                          "value": [
+                            "$",
+                            {
+                              "induction_variable": {
+                                "value": "s"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "rhs": {
+                  "value": {
+                    "left": {
+                      "sign": null,
+                      "value": {
+                        "left": {
+                          "left": {
+                            "id0": {
+                              "value": [
+                                "$",
+                                {
+                                  "induction_variable": {
+                                    "value": "I"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "right": {
+                            "id0": {
+                              "value": "H"
+                            }
+                          }
+                        },
+                        "right": {
+                          "id0": {
+                            "value": "c"
+                          }
+                        }
+                      }
+                    },
+                    "op": "+",
+                    "right": {
+                      "id0": {
+                        "value": [
+                          "$",
+                          {
+                            "induction_variable": {
+                              "value": "s"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "rhs": {
+                "value": {
+                  "left": {
+                    "sign": null,
+                    "value": {
+                      "left": {
+                        "left": {
+                          "id0": {
+                            "value": [
+                              "$",
+                              {
+                                "induction_variable": {
+                                  "value": "n"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "right": {
+                          "sub": {
+                            "value": {
+                              "value": {
+                                "left": {
+                                  "sign": null,
+                                  "value": {
+                                    "id0": {
+                                      "value": [
+                                        "$",
+                                        {
+                                          "induction_variable": {
+                                            "value": "n"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                "op": "+",
+                                "right": {
+                                  "num": {
+                                    "value": [
+                                      "1"
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "op": "/",
+                      "right": {
+                        "num": {
+                          "value": [
+                            "2"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "op": "+",
+                  "right": {
+                    "left": {
+                      "left": {
+                        "id0": {
+                          "value": [
+                            "$",
+                            {
+                              "induction_variable": {
+                                "value": "s"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "op": "\u22c5",
+                      "right": {
+                        "num": {
+                          "value": [
+                            "2"
+                          ]
+                        }
+                      }
+                    },
+                    "op": "/",
+                    "right": {
+                      "num": {
+                        "value": [
+                          "2"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "rhs": {
+              "sign": null,
+              "value": {
+                "left": {
+                  "left": {
+                    "id0": {
+                      "value": [
+                        "$",
+                        {
+                          "induction_variable": {
+                            "value": "s"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "right": {
+                    "sub": {
+                      "value": {
+                        "value": {
+                          "left": {
+                            "sign": null,
+                            "value": {
+                              "id0": {
+                                "value": [
+                                  "$",
+                                  {
+                                    "induction_variable": {
+                                      "value": "n"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "op": "+",
+                          "right": {
+                            "num": {
+                              "value": [
+                                "2"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "op": "/",
+                "right": {
+                  "num": {
+                    "value": [
+                      "2"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "rhs": {
+            "sign": null,
+            "value": {
+              "left": {
+                "left": {
+                  "sub": {
+                    "value": {
+                      "sign": null,
+                      "value": {
+                        "id0": {
+                          "value": [
+                            "$",
+                            {
+                              "induction_variable": {
+                                "value": "s"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "op": "\u22c5",
+                "right": {
+                  "sub": {
+                    "value": {
+                      "value": {
+                        "left": {
+                          "value": {
+                            "left": {
+                              "sign": null,
+                              "value": {
+                                "id0": {
+                                  "value": [
+                                    "$",
+                                    {
+                                      "induction_variable": {
+                                        "value": "n"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "op": "+",
+                            "right": {
+                              "num": {
+                                "value": [
+                                  "1"
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "op": "+",
+                        "right": {
+                          "num": {
+                            "value": [
+                              "1"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "num": {
+                  "value": [
+                    "2"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  ]
+}
