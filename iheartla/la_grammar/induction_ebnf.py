@@ -18,10 +18,7 @@ induction_declaration::Induction
 
 ih::InductionHypothesis
     =
-    equality
-    ;
-
-chain_equality::ChainEquality
+::ChainEquality
     =
     | lhs:chain_equality {hspace} '=' {hspace} rhs:expression
     | equality
@@ -32,7 +29,7 @@ equality::Equality
     lhs:expression {hspace} '=' {hspace} rhs:expression
     ;
 
-induction_identifier
+induction_identifier::InductionIdentifier
     =
      '$' (induction_word_identifier | induction_variable_identifier)
     ;
@@ -42,7 +39,7 @@ induction_variable_identifier::InductionN
      induction_variable:identifier_alone
     ;
 
-induction_word_identifier
+induction_word_identifier::InductionReference
     = 'IH-' op:identifier_alone
     ;
 # text_with_n::TextN

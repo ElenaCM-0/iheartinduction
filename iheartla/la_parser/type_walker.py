@@ -2092,9 +2092,58 @@ class TypeWalker(NodeWalker):
             assert False, "Not a function"
             # assert len(node.params) == 1, "Not a function"  # never reach
             # return self.make_mul_info(name_info, self.walk(node.params[0], **kwargs))
-    
+
     ##!HERE## 
     def walk_Induction(self, node, **kwargs):
+        # ih
+        # basen
+        # basep
+        # step_size
+        # proof
+        pass
+
+    def walk_InductionHypothesis(self, node, **kwargs):
+        equality_info = self.walk(node.eq)
+
+        ##!# This is wrong, figure out why
+
+        return equality_info.copy()
+
+    def walk_ChainEquality(self, node, **kwargs):
+        lhs_info = self.walk(node.lhs)
+        rhs_info = self.walk(node.rhs)
+
+        ir_node = lhs_info.ir.union(rhs_info.ir)
+        lhs_info.ir.set_parent(ir_node)
+        rhs_info.ir.set_parent(ir_node)
+
+        ##!# Poner bien el tipo y comprobar los parámetros
+        node_info = NodeInfo(la_type=lhs_info.la_type, symbols = lhs_info.symbols.union(rhs_info.symbols), ir = ir_node)
+
+        return node_info
+
+
+    def walk_Equality(self, node, **kwargs):
+        lhs_info = self.walk(node.lhs)
+        rhs_info = self.walk(node.rhs)
+
+        # Settear un tipo que tenga sentid
+        ir_node = ChainEqualityNode(None, None, [lhs_info.ir, rhs_info.ir]) ##!# Qué deberían ser los dos primeros parámetros?
+        lhs_info.ir.set_parent(ir_node)
+        rhs_info.ir.set_parent(ir_node)
+
+        ##!# Poner bien el tipo y comprobar los parámetros
+        node_info = NodeInfo(la_type=lhs_info.la_type, symbols = lhs_info.symbols.union(rhs_info.symbols), ir = ir_node)
+
+        return node_info
+
+    def walk_InductionIdentifier(self, node, **kwargs):
+        pass
+
+    def walk_InductionN(self, node, **kwargs):
+        pass
+
+    def walk_InductionReference(self, node, **kwargs):
         pass
 
     def walk_IfCondition(self, node, **kwargs):

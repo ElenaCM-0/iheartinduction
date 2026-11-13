@@ -22,6 +22,10 @@ class IRNodeType(Enum):
     Function = 54
     LocalFunc = 55
     ##!HERE## Add a new type for induction
+    Induction = 56
+    InductionHypothesis = 57
+    InductionStep = 58
+    InductionExpression = 59
     # if condition
     Condition = 99
     In = 100
@@ -259,9 +263,6 @@ class FunctionTypeNode(ExprNode):
         self.separators = []
         self.ret = None
 
-##!HERE## Comprobar que heredo de quien toca
-class InductionNode(ExprNode):
-    pass
 
 class ImportNode(StmtNode):
     def __init__(self, package=None, module=None, names=None, separators=None, params=None, parse_info=None, raw_text=None):
@@ -999,6 +1000,40 @@ class DerivativeNode(ExprNode):
         super().__init__(IRNodeType.Derivative, parse_info=parse_info, raw_text=raw_text)
         self.value = None
 
+
+##!HERE##
+class InductionNode(IRNode):
+    def __init__(self, ih, basen: int, step_size: int, proof, parse_info, raw_text):
+        super().__init__(IRNodeType.Induction, parse_info=parse_info, raw_text=raw_text)
+        self.ih = ih
+        self.basen = basen
+        self.step_size = step_size
+        self.proof = proof
+
+class InductionHypothesisNode(IRNode):
+    def __init__(self, lhs, rhs, parse_info, raw_text):
+        super().__init__(IRNodeType.InductionHypothesis, parse_info=parse_info, raw_text=raw_text)
+        self.lhs = lhs
+        self.rhs = rhs
+
+class InductionStepNode(IRNode):
+    def __init__(self, expression, parse_info, raw_text):
+        super().__init__(IRNodeType.InductionStep, parse_info=parse_info, raw_text=raw_text)
+        self.expression = expression
+        self.change = None
+
+class InductionExpressionNode(ExpressionNode):
+    def __init__(self, parse_info, raw_text):
+        super().__init__(IRNodeType.InductionExpression, parse_info=parse_info, raw_text=raw_text)
+        ##!# Completar esto
+
+class ChainEqualityNode(IRNode):
+    def __init__(self, parse_info, raw_text, steps):
+        super().__init__(IRNodeType.InductionExpression, parse_info=parse_info, raw_text=raw_text)
+        self.steps = steps
+
+    def union(self, otherNode):
+        return ChainEqualityNode (self.steps + otherNode.steps)
 
 class MathFuncType(IntEnum):
     MathFuncInvalid = -1
